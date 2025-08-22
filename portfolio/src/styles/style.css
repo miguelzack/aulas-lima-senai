@@ -7,6 +7,10 @@ body {
   background-color: #1a1a1a;
 }
 
+button {
+  cursor: pointer;
+}
+
 main {
   padding-top: 60px;
   padding-bottom: 79px;
@@ -17,24 +21,34 @@ header {
   justify-content: center;
   gap: 163px;
   align-items: center;
+  font-family: "Montserrat";
 }
 
-button {
-  cursor: pointer;
-}
-
-button.sun-icon-theme {
-  background-color: #1a1a1a;
+img.logo {
+  width: 85px;
+  height: 44px;
 }
 
 nav.nav-header {
   display: flex;
   gap: 50px;
-  font-family: "Montserrat";
+
   font-size: 18px;
   font-weight: 500;
 }
 
 nav.nav-header a {
-  color: #C1C1C1;
+  color: #c1c1c1;
+}
+
+button.contact-me {
+  padding: 13.5px 19px;
+  background-color: transparent;
+  color: white;
+  font-family: "Montserrat";
+  border: 1px solid #4fc3f7;
+  border-radius: 9px;
+}
+button.sun-icon-theme {
+  background-color: #1a1a1a;
 }
