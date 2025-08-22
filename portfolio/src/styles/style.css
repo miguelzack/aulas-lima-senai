@@ -3,6 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 /* font-family: "Montserrat"; */
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* font-family: Poppins; */
+
 body {
   background-color: #1a1a1a;
 }
@@ -53,4 +57,61 @@ button.contact-me {
 }
 button.sun-icon-theme {
   background-color: #1a1a1a;
+}
+
+section.hero {
+  margin-top: 34px;
+  border-radius: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 234px;
+  margin-right: 253px;
+  background-image: url(/src/assets/images/background-hero.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Poppins";
+}
+
+section.hero img {
+  margin-top: 138px;
+}
+
+section.hero h1 {
+  font-size: 63px;
+  font-weight: bold;
+  color: white;
+}
+
+section.hero span {
+  background: linear-gradient(to right, #4fc3f7, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+p.descrip {
+  color: #e1e1e1;
+  font-size: 19px;
+  text-align: center;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+section.hero button {
+  padding: 18.5px 49.5px;
+  background-color: transparent;
+  color: white;
+  font-family: "Montserrat";
+  border: 1px solid #4fc3f7;
+  border-radius: 75px;
+  font-size: 15px;
+  font-weight: 500px;
+  margin-top: 40px;
+  margin-bottom: 102px;
 }
