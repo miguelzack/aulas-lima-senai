@@ -1,7 +1,40 @@
 @import url(reset.css);
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* font-family: "Montserrat"; */
+
+body {
+  background-color: #1a1a1a;
+}
 
 main {
+  padding-top: 60px;
+  padding-bottom: 79px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  gap: 163px;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+button.sun-icon-theme {
+  background-color: #1a1a1a;
+}
+
+nav.nav-header {
+  display: flex;
+  gap: 50px;
   font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 500;
+}
+
+nav.nav-header a {
+  color: #C1C1C1;
 }
