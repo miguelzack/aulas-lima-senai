@@ -48,6 +48,8 @@ button.contact-me {
   font-family: "Montserrat";
   border: 1px solid #4fc3f7;
   border-radius: 9px;
+  font-size: 15px;
+  font-weight: 500px;
 }
 button.sun-icon-theme {
   background-color: #1a1a1a;
