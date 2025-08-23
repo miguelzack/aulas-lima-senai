@@ -273,3 +273,109 @@ section.what-do span {
   font-weight: 400;
   font-size: 14px;
 }
+
+section.projects {
+  padding-top: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+}
+
+section.projects h4 {
+  font-size: 45px;
+  font-weight: 800;
+  color: white;
+}
+
+section.projects span {
+  font-weight: 600;
+  background: linear-gradient(to right, #4fc3f7, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: 14px;
+}
+
+.buttons-projects {
+  margin-top: 40px;
+  display: flex;
+  gap: 55px;
+}
+
+.buttons-projects button {
+  background-color: transparent;
+  color: #a9a9a9;
+  font-size: 16px;
+  font-family: 400;
+  border-radius: 50px;
+  height: 55px;
+  padding-right: 32px;
+  padding-left: 32px;
+  border: 1px solid #484e53;
+}
+
+.buttons-projects button:hover {
+  background-color: #484e53;
+  color: #f5f5f5;
+}
+
+.wrapper-full-cards {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 79.67px;
+}
+
+.wrapper-cards {
+  display: flex;
+  gap: 40px;
+}
+
+.card-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.card-bottom img {
+  width: 37.67px;
+  height: 37.67px;
+}
+
+.text-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.text-projects h6 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #c1c1c1;
+}
+
+.text-projects p {
+  color: #a9a9a9;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+button.button-view-all {
+  font-family: "Montserrat";
+  padding: 19px 74.5px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: transparent;
+  border-radius: 75px;
+  border: 1px solid #484e53;
+  color: white;
+}
