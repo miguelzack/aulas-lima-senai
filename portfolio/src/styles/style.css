@@ -4,8 +4,10 @@
 /* font-family: "Montserrat"; */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 /* font-family: Poppins; */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* font-family: "Inter;" */
 
 body {
   background-color: #1a1a1a;
@@ -114,4 +116,48 @@ section.hero button {
   font-weight: 500px;
   margin-top: 40px;
   margin-bottom: 102px;
+}
+
+section.about-me {
+  font-family: "Inter";
+  padding-top: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section.about-me h2 {
+  color: white;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+section.about-me span {
+  font-weight: 600;
+  background: linear-gradient(to right, #4fc3f7, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+section.about-me p {
+  margin-top: 40px;
+  text-align: center;
+  color: #e1e1e1;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+section.about-me button {
+  padding: 18.5px 35px;
+  background-color: transparent;
+  color: white;
+  font-family: "Montserrat";
+  border: 1px solid #4fc3f7;
+  border-radius: 55px;
+  font-size: 15px;
+  font-weight: 500px;
+  margin-top: 40px;
 }
