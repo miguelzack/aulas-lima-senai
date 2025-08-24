@@ -9,6 +9,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 /* font-family: "Inter;" */
 
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+/* font-family: Raleway; */
 body {
   background-color: #1a1a1a;
 }
@@ -45,6 +47,10 @@ nav.nav-header {
 
 nav.nav-header a {
   color: #c1c1c1;
+}
+
+nav.nav-header a:hover {
+  color: #4fc3f7;
 }
 
 button.contact-me {
@@ -378,4 +384,120 @@ button.button-view-all {
   border-radius: 75px;
   border: 1px solid #484e53;
   color: white;
+}
+
+section.form-work {
+  padding-top: 219.67px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+}
+
+section.form-work h4 {
+  font-size: 45px;
+  font-weight: 800;
+  color: white;
+}
+
+section.form-work span {
+  font-weight: 600;
+  background: linear-gradient(to right, #4fc3f7, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: 14px;
+}
+
+.form-area {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-area label {
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+}
+
+.form-area input {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: transparent;
+  border: 1px solid #d6dded;
+  border-radius: 10px;
+  width: 696px;
+  padding-left: 32px;
+  color: white;
+  font-size: 20px;
+  padding-right: 32px;
+}
+
+.form-area input::placeholder {
+  font-size: 20px;
+  color: #8987a1;
+  font-weight: 400;
+}
+
+.form-area select {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: transparent;
+  border: 1px solid #d6dded;
+  border-radius: 10px;
+  width: 696px;
+  padding-left: 32px;
+  padding-right: 32px;
+  color: #8987a1;
+  font-size: 20px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("/src/assets/images/seta-select.svg");
+  background-repeat: no-repeat;
+  background-position: right 32px center;
+  background-size: 15px;
+}
+
+.form-area select option {
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.form-area select option:checked {
+  background-color: #0a4b69;
+  color: white;
+}
+
+.form-area select:valid {
+  color: white;
+}
+
+.form-area textarea {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: transparent;
+  border: 1px solid #d6dded;
+  border-radius: 10px;
+  padding-left: 32px;
+  color: white;
+  font-size: 20px;
+  padding-right: 32px;
+  width: 696px;
+  height: 222px;
+}
+
+.form-area button {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 19px 300px;
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 700;
 }
