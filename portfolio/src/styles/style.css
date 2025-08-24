@@ -501,3 +501,63 @@ section.form-work span {
   font-size: 16px;
   font-weight: 700;
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 220px;
+  font-family: "Inter";
+}
+
+.top-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 121.5px;
+  padding-right: 121.5px;
+  gap: 266px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #484e53;
+}
+
+.top-footer h4 {
+  color: #dedede;
+  font-size: 63px;
+  font-weight: 500;
+  width: 693px;
+}
+
+.top-footer a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 24.9px;
+  font-weight: 400;
+  color: #c9c9c9;
+  border: 1px solid #484e53;
+  border-radius: 15px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-left: 27px;
+  padding-right: 27px;
+}
+
+.base-footer {
+  padding-top: 36px;
+  padding-bottom: 45px;
+  display: flex;
+  justify-content: center;
+  gap: 685px;
+}
+
+.base-footer p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #A9A9A9;
+  width: 285px;
+}
+
+.links-footer {
+  display: flex;
+  gap: 21px;
+}
