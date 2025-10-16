@@ -36,6 +36,12 @@ form {
     border: 1px solid red;
 }
 
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
 img {
     width: 50%;
 }
