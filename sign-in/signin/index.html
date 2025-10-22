@@ -1,46 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign In</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/signin/style.css" />
+  </head>
+  <body>
     <main>
-        <section>
-            <div class="form-container">
-                <h1>Welcome back!</h1>
-                <p>Enter your Credentials to access your account</p>
-                <form action="" method="post">
-                    <fieldset>
-                        <label for="email">Email address</label>
-                        <input placeholder="Enter your email" type="email" id="email">
-                    </fieldset>
-                    <fieldset>
-                        <div class="title-wrapper">
-                            <label for="password">Password</label>
-                            <a href="">forgot password</a>
-                        </div>
-                        <input placeholder="Name" type="password" id="password">
-                    </fieldset>
-                    <fieldset class="checkbox">
-                        <input type="checkbox" name="checkbox" id="checkbox">
-                        <label for="remember">Remember for 30 days</label>
-                    </fieldset>
-                    <button type="submit">Login</button>
-                </form>
-                <!-- .divider>.line+p+line -->
-                
-                <div class="divider">
-                    <div class="line"></div>
-                    <p>Or</p>
-                    <div class="line"></div>
-                </div>
-            </div>
+      <section>
+        <div class="form-container">
+          <h1>Welcome back!</h1>
+          <p>Enter your Credentials to access your account</p>
+          <form action="" method="post">
+            <fieldset>
+              <label for="email">Email address</label>
+              <input placeholder="Enter your email" type="email" id="email" />
+            </fieldset>
+            <fieldset>
+              <div class="title-wrapper">
+                <label for="password">Password</label>
+                <a href="">forgot password</a>
+              </div>
+              <input placeholder="Name" type="password" id="password" />
+            </fieldset>
+            <fieldset class="checkbox">
+              <input type="checkbox" name="checkbox" id="checkbox" />
+              <label for="remember">Remember for 30 days</label>
+            </fieldset>
+            <button type="submit">Login</button>
+          </form>
+          <!-- .divider>.line+p+line -->
 
-        </section>
-        <img src="../assets/imgs/costela-de-adao.png" alt="foto de uma planta costela-de-adao">
+          <div class="divider">
+            <div class="line"></div>
+            <p>Or</p>
+            <div class="line"></div>
+          </div>
+        </div>
+      </section>
+      <img
+        src="../assets/imgs/costela-de-adao.png"
+        alt="foto de uma planta costela-de-adao"
+      />
     </main>
-</body>
+    <script>
+      // Função que faz o login
+      async function loginUser(event) {
+        event.preventDefault(); // Impede o envio do formulário para que possamos controlar a requisição
+
+        // Pega os valores do formulário
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+        // Cria o objeto de dados para enviar à API
+        const userData = {
+          email: email,
+          senha: password,
+        };
+
+        try {
+          // Envia os dados para o backend
+          const response = await fetch("http://localhost:8080/login", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(userData),
+          });
+
+          // Converte a resposta para JSON
+          const data = await response.json();
+
+          // Exibe a mensagem da resposta (seja sucesso ou erro vindo do backend)
+          alert(data.message);
+
+          // Opcional: Se o login foi um sucesso (response.ok), redirecione o usuário
+          if (response.ok) {
+            console.log("Login bem-sucedido!");
+            // Exemplo: redirecionar para uma página de "dashboard"
+            // window.location.href = "/dashboard.html";
+          } else {
+            console.warn("Falha no login:", data.message);
+          }
+        } catch (error) {
+          // Este erro acontece se o servidor estiver offline ou houver um erro de rede
+          console.error("Erro de conexão ou parsing:", error);
+          alert("Erro ao tentar fazer login. O servidor pode estar offline.");
+        }
+      }
+
+      // Associa a função de login ao evento de submit do formulário
+      document.querySelector("form").addEventListener("submit", loginUser);
+    </script>
+  </body>
 </html>
