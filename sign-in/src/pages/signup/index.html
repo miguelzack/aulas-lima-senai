@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title> 
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main>
+      <section>
+        <div class="form-container">
+          <h1>Get Started Now</h1>
+          <form action="" method="post">
+              <fieldset>
+                <label for="name">Name</label>
+                <input placeholder="Enter your name" type="text" id="name" />
+              </fieldset>
+           <fieldset>
+              <label for="email">Email address</label>
+              <input placeholder="Enter your email" type="email" id="email" />
+            </fieldset>
+              <fieldset>
+                <label for="password">Password</label>
+              <input placeholder="Name" type="password" id="password" />
+            </fieldset>
+            <fieldset class="checkbox">
+              <input type="checkbox" name="checkbox" id="checkbox" />
+              <label for="remember" id="checkbox">I agree to the <a href="#">terms & policy</a></label>
+            </fieldset>
+            <button class="login" type="submit">Signup</button>
+          </form>
+          <!-- .divider>.line+p+line -->
+
+          <div class="divider">
+            <div class="line"></div>
+            <p>Or</p>
+            <div class="line"></div>
+          </div>
+          <div class="sign-wrapper">
+            <button class="sign-apps">
+              <img
+                src="/src/assets/icons/google-icon.svg"
+                alt="Logo da Google"
+                class="logo-sign-button"
+              />Sign in with Google
+            </button>
+            <button class="sign-apps">
+              <img
+                src="/src/assets/icons/apple-icon.svg"
+                alt="Logo da Apple"
+                class="logo-sign-button"
+              />Sign in with Apple
+            </button>
+          </div>
+        </div>
+        <h5 id="redirect-sign-in">
+          Have an account
+          <a href="/src/pages/signin/index.html">Sign In</a>
+        </h5>
+      </section>
+      <img
+        src="/src/assets/images/costela-de-adao.png"
+        alt="foto de uma planta costela-de-adao"
+      />
+    </main>
+</body>
+</html>
