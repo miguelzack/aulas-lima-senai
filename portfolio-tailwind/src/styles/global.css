@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ff4928;
+  --color-gray-custom: #7b7b7b;
+  --color-black-hover: #070707;
+}
+
+@layer base {
+  :root {
+    --font-open-sans: "Open Sans", sans-serif;
+  }
+
+  html {
+    font-family: var(--font-open-sans), sans-serif;
+  }
+}

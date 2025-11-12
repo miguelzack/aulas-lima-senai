@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
+import "@/styles/global.css";
 
 const openSans = Open_Sans({
   weight: ["300", "400", "500", "600", "700", "800"],
@@ -21,8 +22,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="keywords"
+          content="Portfolio Miguel Desenvolvimento"
+        />
+      </head>
       <body
-        className={`antialiased`}
+        className={`${openSans.variable}  antialiased`}
       >
         {children}
       </body>
