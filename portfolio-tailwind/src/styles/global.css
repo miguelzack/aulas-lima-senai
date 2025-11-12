@@ -4,6 +4,7 @@
   --color-primary: #ff4928;
   --color-gray-custom: #7b7b7b;
   --color-black-hover: #070707;
+  --color-utility-gray: #667085;
 }
 
 @layer base {
