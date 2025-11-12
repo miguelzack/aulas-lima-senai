@@ -1,0 +1,1 @@
+export { default as LinkedinIco } from "./linkedin-icon"
