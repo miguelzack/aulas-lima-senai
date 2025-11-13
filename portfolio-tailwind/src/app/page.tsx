@@ -64,7 +64,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col items-start gap-2.5 self-stretch bg-primary">
+      <section className="contact flex flex-col items-start gap-2.5 self-stretch bg-primary">
         <div className="flex py-[100px] justify-center items-center gap-[141px] self-stretch">
           <div className="flex w-[45.572%] flex-col items-start gap-5">
             <Image
