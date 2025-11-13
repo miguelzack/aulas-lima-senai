@@ -5,6 +5,8 @@
   --color-gray-custom: #7b7b7b;
   --color-black-hover: #070707;
   --color-utility-gray: #667085;
+  --color-border-form: rgba(123, 123, 123, 0.20);
+  --color-font-form: rgba(123, 123, 123, 0.50);
 }
 
 @layer base {
