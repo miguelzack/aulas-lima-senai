@@ -8,7 +8,7 @@ import Image from "next/image";
 import ButtonDownload from "@/components/button-download/button-download";
 import { ProjectCard } from "@/components/project-card/project-card";
 import { ButtonLinkedin } from "@/components/button-linkedin/button-link";
-import { SendEmailIco } from "@/assets/svgs/export"
+import { SendEmailIco, LaptopIco, FigmaIcoOrange, HtmlIco } from "@/assets/svgs/export"
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 
@@ -74,6 +74,46 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <section className="flex w-full py-[100px] flex-col justify-center items-center gap-2.5 bg-black">
+        <div className="flex flex-col justify-center items-center gap-[60px]">
+          <h2 className="text-center text-[40px] font-extrabold text-white"><span className="text-primary">Skills </span>& Software</h2>
+          <div className="flex items-center gap-[135px] self-stretch">
+            <div className="flex w-[442px] flex-col items-start gap-[55px]">
+              <div className="flex flex-col items-start pb-7 self-stretch border-b-[5px] border-primary">
+                <div className="flex items-center gap-[15px]">
+                  <LaptopIco />
+                  <p className="text-2xl font-extrabold text-white">Web Designer</p>
+                </div>
+              </div>
+              <div className="flex flex-col items-start pb-7 self-stretch border-b-[5px] border-primary">
+                <div className="flex items-center gap-[15px]">
+                  <FigmaIcoOrange />
+                  <p className="text-2xl font-extrabold text-white">UI/UX Designer</p>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col w-[541px] p-10 justify-center items-center content-center flex-wrap gap-y-[65px] gap-x-[100px]"></div>
+            <div className="flex flex-col gap-y-[65px]">
+
+            <div className="flex gap-x-[100px]">
+            <HtmlIco />
+            <HtmlIco />
+            <HtmlIco />
+            </div>
+            <div className="flex gap-x-[100px]">
+            <HtmlIco />
+            <HtmlIco />
+            <HtmlIco />
+            </div>
+            <div className="flex gap-x-[100px]">
+            <HtmlIco />
+            <HtmlIco />
+            <HtmlIco />
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="portfolio" className="flex py-[108px] flex-col justify-center items-center gap-2.5 self-stretch">
         <div className="flex flex-col justify-center items-center gap-[54px] w-[75%]">
           <h2 className="text-center text-[40px] font-extrabold">Portfolio</h2>
