@@ -18,7 +18,7 @@ export function ProjectCard({
   projectLink,
 }: ProjectCardProps) {
   return (
-    <div className="flex flex-col py-[30px] px-5 items-start gap-[26px] lg:w-[48.89%] w-full rounded-[15px] border border-border-card">
+    <div className="flex flex-col py-[30px] px-5 items-start gap-[26px] lg:w-[48.89%] w-full rounded-[15px] border border-border-card transition-all duration-300 ease-out hover:-translate-y-4">
       <Image
         src={imageSrc}
         alt={altText}
@@ -31,7 +31,7 @@ export function ProjectCard({
           href={projectLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex py-3 px-5 items-center gap-[15px] rounded-[35px] border border-gray-custom text-base font-normal text-gray-custom"
+          className="flex py-3 px-5 items-center gap-[15px] rounded-[35px] border border-gray-custom text-base font-normal text-gray-custom hover:bg-gray-200 transition-all duration-300 ease-out hover:shadow-sm hover:-translate-y-1"
         >
           <RedirectIco />
           View Project

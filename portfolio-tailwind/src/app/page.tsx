@@ -17,7 +17,7 @@ export default function Home() {
           <Image
             src={Perfil}
             alt="Minha foto de perfil"
-            className="md:w-[424px] sm:w-[280px] w-[200px] md:mb-0 sm:mb-[57px] mb-11"
+            className="md:w-[424px] md:hover:w-[500px] sm:w-[280px] sm:hover:w-[350px] w-[200px] hover:w-[250px] md:mb-0 sm:mb-[57px] mb-11 transition-all duration-300 ease-out hover:-translate-y-4"
           />
           <div className="flex flex-col items-center self-stretch md:gap-0 sm:gap-[15px] gap-5 w-full">
             <div className="flex sm:flex-row flex-col items-center gap-[21px]">
@@ -72,7 +72,7 @@ export default function Home() {
             <Image
               src={Perfil}
               alt="Minha foto de perfil"
-              className="w-[183px]"
+              className="w-[183px] transition-all duration-300 ease-out hover:-translate-y-4 hover:w-[250px]"
             />
             <h5 className="text-white text-[40px] font-extrabold text-center">Contact me</h5>
             <p className="self-stretch text-xl font-normal text-white md:text-start text-center">Interested in discussing web development, sharing ideas about software projects, or exploring new solutions in programming? Feel free to reach out—let's connect and keep building.</p>
@@ -81,11 +81,12 @@ export default function Home() {
           <div className="flex p-10 flex-col justify-center items-center gap-[25px] rounded-xl bg-white md:w-[23%]">
             <h6 className="text-primary text-base font-extrabold">Let's Stay Connected</h6>
             <form action="" method="post" className="flex flex-col items-start gap-5 self-stretch">
-              <input placeholder="Your Name*" type="text" id="name" className="flex w-full px-[25px] py-2.5 rounded-lg border border-border-form text-base text-font-form font-normal" />
-              <input placeholder="Email ID*" type="email" id="email" className="flex w-full px-[25px] py-2.5 rounded-lg border border-border-form text-base text-font-form font-normal" />
-              <input placeholder="Phone No*" type="number" id="number" className="flex w-full px-[25px] py-2.5 rounded-lg border border-border-form text-base text-font-form font-normal" />
-              <textarea name="message" id="message" placeholder="Message*" className="w-full h-[105px] py-2.5 px-[25px] items-start gap-2.5 rounded-lg border border-border-form text-base text-font-form font-normal"></textarea>
-              <button className="login flex py-[15px] px-[25px] justify-center items-center gap-2.5 rounded-[35px] border border-white bg-primary text-xl w-full font-normal text-white" type="submit"> <SendEmailIco /> Send email</button>
+              <input placeholder="Your Name*" type="text" id="name" className="flex w-full px-[25px] py-2.5 rounded-lg border border-border-form text-base placeholder:text-font-form font-normal" />
+              <input placeholder="Email ID*" type="email" id="email" className="flex w-full px-[25px] py-2.5 rounded-lg border border-border-form text-base placeholder:text-font-form font-normal" />
+              <input placeholder="Phone No*" type="number" id="number" className="flex w-full px-[25px] py-2.5 rounded-lg border border-border-form text-base placeholder:text-font-form font-normal" />
+              <textarea name="message" id="message" placeholder="Message*" className="w-full h-[105px] py-2.5 px-[25px] items-start gap-2.5 rounded-lg border border-border-form text-base placeholder:text-font-form font-normal"></textarea>
+              <button className="login flex py-[15px] px-[25px] justify-center items-center gap-2.5 rounded-[35px] border border-white bg-primary text-xl w-full font-normal text-white hover:bg-orange-700 transition-all duration-300 ease-out hover:shadow-sm hover:-translate-y-1" type="submit"> <SendEmailIco className="inline md:hidden xl:inline" />
+                Send email</button>
             </form>
           </div>
         </div>

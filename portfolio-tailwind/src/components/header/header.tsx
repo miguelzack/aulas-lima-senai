@@ -14,13 +14,13 @@ export function Header() {
 
       <div className="wrapper-nav hidden md:flex items-center xl:gap-[220px] gap-6">
         <nav className="flex py-[15px] px-[90px] gap-[75px] items-center justify-center rounded-[35px] bg-white shadow-[0_4px_15px_0_rgba(0,0,0,0.10)]">
-          <a href="#home" className="text-gray-custom hover:text-black-hover xl:text-xl text-base font-normal">
+          <a href="#home" className="text-gray-custom hover:text-black-hover hover:font-semibold xl:text-xl text-base font-normal transition-all duration-300 ease-out  hover:-translate-y-1">
             Home
           </a>
-          <a href="#portfolio" className="text-gray-custom hover:text-black-hover xl:text-xl text-base font-normal">
+          <a href="#portfolio" className="text-gray-custom hover:text-black-hover hover:font-semibold xl:text-xl text-base font-normal transition-all duration-300 ease-out  hover:-translate-y-1">
             Portfolio
           </a>
-          <a href="#" className="text-gray-custom hover:text-black-hover xl:text-xl text-base font-normal">
+          <a href="#contact" className="text-gray-custom hover:text-black-hover xl:text-xl hover:font-semibold text-base font-normal transition-all duration-300 ease-out hover:-translate-y-1">
             Contact
           </a>
         </nav>
