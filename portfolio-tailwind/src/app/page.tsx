@@ -1,3 +1,5 @@
+"use client";
+
 import "@/styles/global.css";
 import { Header } from "@/components/header/header";
 import { Badge } from "@/components/check-prof/check";
@@ -7,8 +9,35 @@ import ButtonDownload from "@/components/button-download/button-download";
 import { ProjectCard } from "@/components/project-card/project-card";
 import { ButtonLinkedin } from "@/components/button-linkedin/button-link";
 import { SendEmailIco } from "@/assets/svgs/export"
+import React, { useRef } from "react";
+import emailjs from "emailjs-com";
+
 
 export default function Home() {
+  const formRef = useRef<HTMLFormElement>(null);
+
+  function sendEmail(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+
+    if (!formRef.current) return;
+
+    emailjs.sendForm(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+      formRef.current,
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+    )
+
+      .then(() => {
+        alert("Email enviado com sucesso!");
+        formRef.current?.reset();
+      })
+      .catch((err) => {
+        console.error(err);
+        alert("Ocorreu um erro. Tente novamente.");
+      });
+  }
+
   return (
     <div className="all-page">
       <main id="home" className="flex flex-col justify-center lg:py-[52px] sm:py-[60px] py-8 lg:px-[58px] px-9 bg-[url('/bg-main.jpg')] bg-cover bg-no-repeat bg-[lightgray] bg-center items-center lg:gap-[62px] sm:gap-[57px] gap-11 self-stretch">
@@ -80,14 +109,51 @@ export default function Home() {
           </div>
           <div className="flex p-10 flex-col justify-center items-center gap-[25px] rounded-xl bg-white md:w-[23%]">
             <h6 className="text-primary text-base font-extrabold">Let's Stay Connected</h6>
-            <form action="" method="post" className="flex flex-col items-start gap-5 self-stretch">
-              <input placeholder="Your Name*" type="text" id="name" className="flex w-full px-[25px] py-2.5 rounded-lg border border-border-form text-base placeholder:text-font-form font-normal" />
-              <input placeholder="Email ID*" type="email" id="email" className="flex w-full px-[25px] py-2.5 rounded-lg border border-border-form text-base placeholder:text-font-form font-normal" />
-              <input placeholder="Phone No*" type="number" id="number" className="flex w-full px-[25px] py-2.5 rounded-lg border border-border-form text-base placeholder:text-font-form font-normal" />
-              <textarea name="message" id="message" placeholder="Message*" className="w-full h-[105px] py-2.5 px-[25px] items-start gap-2.5 rounded-lg border border-border-form text-base placeholder:text-font-form font-normal"></textarea>
-              <button className="login flex py-[15px] px-[25px] justify-center items-center gap-2.5 rounded-[35px] border border-white bg-primary text-xl w-full font-normal text-white hover:bg-orange-700 transition-all duration-300 ease-out hover:shadow-sm hover:-translate-y-1" type="submit"> <SendEmailIco className="inline md:hidden xl:inline" />
-                Send email</button>
+            <form
+              ref={formRef}
+              onSubmit={sendEmail}
+              className="flex flex-col items-start gap-5 self-stretch"
+            >
+              <input
+                placeholder="Your Name*"
+                name="name"
+                type="text"
+                className="flex w-full px-[25px] py-2.5 rounded-lg border border-border-form text-base placeholder:text-font-form font-normal"
+                required
+              />
+
+              <input
+                placeholder="Email ID*"
+                name="email"
+                type="email"
+                className="flex w-full px-[25px] py-2.5 rounded-lg border border-border-form text-base placeholder:text-font-form font-normal"
+                required
+              />
+
+              <input
+                placeholder="Phone No*"
+                name="number"
+                type="tel"
+                className="flex w-full px-[25px] py-2.5 rounded-lg border border-border-form text-base placeholder:text-font-form font-normal"
+                required
+              />
+
+              <textarea
+                name="message"
+                placeholder="Message*"
+                className="w-full h-[105px] py-2.5 px-[25px] rounded-lg border border-border-form text-base placeholder:text-font-form font-normal"
+                required
+              ></textarea>
+
+              <button
+                className="login flex py-[15px] px-[25px] justify-center items-center gap-2.5 rounded-[35px] border border-white bg-primary text-xl w-full font-normal text-white hover:bg-orange-700 transition-all duration-300 ease-out hover:shadow-sm hover:-translate-y-1"
+                type="submit"
+              >
+                <SendEmailIco className="inline md:hidden xl:inline" />
+                Send email
+              </button>
             </form>
+
           </div>
         </div>
       </section>
