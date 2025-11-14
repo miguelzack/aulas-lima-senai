@@ -110,7 +110,7 @@ export default function Home() {
           </h2>
           <div className="flex lg:flex-row gap-[50px] flex-col w-full justify-between items-center self-stretch">
             <div className="flex flex-col items-start gap-[55px]">
-              <div className="flex  flex-col items-start pb-7 self-stretch border-b-[5px] border-primary">
+              <div className="flex  flex-col items-start pb-7 self-stretch border-b-[5px] border-primary transition-all duration-300 ease-out hover:-translate-y-1">
                 <div className="flex items-center gap-[15px]">
                   <LaptopIco />
                   <p className="text-2xl font-extrabold text-white">
@@ -118,7 +118,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col items-start pb-7 self-stretch border-b-[5px] border-primary">
+              <div className="flex flex-col items-start pb-7 self-stretch border-b-[5px] border-primary transition-all duration-300 ease-out hover:-translate-y-1">
                 <div className="flex items-center gap-[15px]">
                   <FigmaIcoOrange />
                   <p className="text-2xl font-extrabold text-white">
