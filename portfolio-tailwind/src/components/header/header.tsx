@@ -7,12 +7,12 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="flex items-center xl:gap-[220px] w-full md:justify-center md:gap-6 justify-between">
+    <header className="flex items-center 2xl:gap-[220px] xl:gap-[190px] w-full md:justify-center md:gap-6 justify-between">
       <h2 className="xl:text-[40px] md:text-[23px] text-[24px] font-extrabold">
         Miguel <span className="text-primary">Silva.</span>
       </h2>
 
-      <div className="wrapper-nav hidden md:flex items-center xl:gap-[220px] gap-6">
+      <div className="wrapper-nav hidden md:flex items-center 2xl:gap-[220px] xl:gap-[190px] gap-6">
         <nav className="flex py-[15px] px-[90px] gap-[75px] items-center justify-center rounded-[35px] bg-white shadow-[0_4px_15px_0_rgba(0,0,0,0.10)]">
           <a href="#home" className="text-gray-custom hover:text-black-hover hover:font-semibold xl:text-xl text-base font-normal transition-all duration-300 ease-out  hover:-translate-y-1">
             Home
