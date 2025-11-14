@@ -11,24 +11,24 @@ import { SendEmailIco } from "@/assets/svgs/export"
 export default function Home() {
   return (
     <div className="all-page">
-      <main id="home" className="flex flex-col justify-center py-[52px] px-[58px] bg-[url('/bg-main.jpg')] bg-cover bg-no-repeat bg-[lightgray] bg-center items-center gap-[62px] self-stretch">
+      <main id="home" className="flex flex-col justify-center lg:py-[52px] py-[60px] lg:px-[58px] px-9 bg-[url('/bg-main.jpg')] bg-cover bg-no-repeat bg-[lightgray] bg-center items-center lg:gap-[62px] gap-[57px] self-stretch">
         <Header />
-        <section  className="hero w-[878px] flex flex-col items-center">
+        <section className="hero lg:w-[878px] flex flex-col items-center">
           <Image
             src={Perfil}
             alt="Minha foto de perfil"
-            className="w-[424px] h-[424px]"
+            className="md:w-[424px] w-[280px] md:mb-0 mb-[57px]"
           />
-          <div className="flex flex-col items-center self-stretch">
+          <div className="flex flex-col items-center self-stretch md:gap-0 gap-[15px] w-full">
             <div className="flex items-center gap-[21px]">
               <Badge label="Web Developer" />
               <Badge label="UI/UX Designer" />
             </div>
-            <h1 className="text-[90px] font-extrabold">
+            <h1 className="md:text-[90px] text-[65px] font-extrabold">
               <span className="text-primary">Miguel</span> Silva.
             </h1>
             <div className="flex flex-col items-center self-stretch gap-[30px]">
-              <p className="text-xl font-normal text-utility-gray text-center">
+              <p className="text-xl font-normal text-utility-gray text-center w-full">
                 With a solid foundation in my Technical Informatics studies and
                 practical front-end experience, I am always seeking opportunities
                 to apply my skills in programming and development. Bringing an
@@ -38,7 +38,9 @@ export default function Home() {
                 seek a collaboration, or explore new possibilities, I am available
                 to talk.
               </p>
-              <ButtonDownload />
+              <div className="md:mt-0 mt-[15px]">
+                <ButtonDownload />
+              </div>
             </div>
           </div>
         </section>
@@ -46,7 +48,7 @@ export default function Home() {
       <section id="portfolio" className="flex py-[108px] flex-col justify-center items-center gap-2.5 self-stretch">
         <div className="flex flex-col justify-center items-center gap-[54px] w-[75%]">
           <h2 className="text-center text-[40px] font-extrabold">Portfolio</h2>
-          <div className="flex items-center gap-[30px] self-stretch w-full">
+          <div className="flex lg:flex-row flex-col items-center gap-[30px] self-stretch w-full">
             <ProjectCard
               imageSrc={ProjectSenaiExchage}
               altText="Capa do projeto Senai Exchange"
@@ -65,18 +67,18 @@ export default function Home() {
         </div>
       </section>
       <section id="contact" className="flex flex-col items-start gap-2.5 self-stretch bg-primary">
-        <div className="flex py-[100px] justify-center items-center gap-[141px] self-stretch">
-          <div className="flex w-[45.572%] flex-col items-start gap-5">
+        <div className="flex md:flex-row flex-col py-[100px] md:px-0 px-[65px] justify-center items-center md:gap-[141px] gap-[75px] self-stretch">
+          <div className="flex md:w-[45.572%] w-full flex-col md:items-start justify-center items-center gap-5">
             <Image
               src={Perfil}
               alt="Minha foto de perfil"
               className="w-[183px]"
             />
             <h5 className="text-white text-[40px] font-extrabold">Contact me</h5>
-            <p className="self-stretch text-xl font-normal text-white">Interested in discussing web development, sharing ideas about software projects, or exploring new solutions in programming? Feel free to reach out—let's connect and keep building.</p>
+            <p className="self-stretch text-xl font-normal text-white md:text-start text-center">Interested in discussing web development, sharing ideas about software projects, or exploring new solutions in programming? Feel free to reach out—let's connect and keep building.</p>
             <ButtonLinkedin />
           </div>
-          <div className="flex p-10 flex-col justify-center items-center gap-[25px] rounded-xl bg-white w-[23%]">
+          <div className="flex p-10 flex-col justify-center items-center gap-[25px] rounded-xl bg-white md:w-[23%]">
             <h6 className="text-primary text-base font-extrabold">Let's Stay Connected</h6>
             <form action="" method="post" className="flex flex-col items-start gap-5 self-stretch">
               <input placeholder="Your Name*" type="text" id="name" className="flex w-full px-[25px] py-2.5 rounded-lg border border-border-form text-base text-font-form font-normal" />

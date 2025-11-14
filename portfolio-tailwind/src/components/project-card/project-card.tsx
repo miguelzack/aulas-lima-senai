@@ -18,7 +18,7 @@ export function ProjectCard({
   projectLink,
 }: ProjectCardProps) {
   return (
-    <div className="flex flex-col py-[30px] px-5 items-start gap-[26px] w-[48.89%]">
+    <div className="flex flex-col py-[30px] px-5 items-start gap-[26px] lg:w-[48.89%] w-full">
       <Image
         src={imageSrc}
         alt={altText}

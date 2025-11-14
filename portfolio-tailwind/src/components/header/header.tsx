@@ -34,8 +34,6 @@ export function Header() {
       >
         <MenuIco />
       </button>
-
-      {/* MENU SEM DESMONTAR (AGORA ANIMA!) */}
       <div
         className={`
           fixed inset-0 bg-bg-menu w-[315px] right-0 ml-auto
