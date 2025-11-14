@@ -128,18 +128,18 @@ export default function Home() {
               </div>
             </div>
             <div className="flex lg:w-[40%]  md:[w-full] sm:w-[80%] w-[75%] md:p-10 p-[30px] justify-center items-center content-center gap-y-[100px] gap-x-[65px] flex-wrap rounded-[100px] border border-border-skills">
-              <HtmlIco />
-              <CssIco />
-              <JsIco />
-              <ReactIco />
-              <NextIco />
-              <TailwindIco />
-              <BootstrapIco />
-              <SassIco />
-              <NodeIco />
-              <GitIco />
-              <FigmaIco />
-              <JavaIco />
+              <HtmlIco       className="transition-all duration-300 ease-out hover:-translate-y-1"/>
+              <CssIco       className="transition-all duration-300 ease-out hover:-translate-y-1"/>
+              <JsIco       className="transition-all duration-300 ease-out hover:-translate-y-1"/>
+              <ReactIco       className="transition-all duration-300 ease-out hover:-translate-y-1"/>
+              <NextIco       className="transition-all duration-300 ease-out hover:-translate-y-1"/>
+              <TailwindIco       className="transition-all duration-300 ease-out hover:-translate-y-1"/>
+              <BootstrapIco       className="transition-all duration-300 ease-out hover:-translate-y-1"/>
+              <SassIco       className="transition-all duration-300 ease-out hover:-translate-y-1"/>
+              <NodeIco       className="transition-all duration-300 ease-out hover:-translate-y-1"/>
+              <GitIco       className="transition-all duration-300 ease-out hover:-translate-y-1"/>
+              <FigmaIco       className="transition-all duration-300 ease-out hover:-translate-y-1"/>
+              <JavaIco       className="transition-all duration-300 ease-out hover:-translate-y-1"/>
             </div>
           </div>
         </div>
