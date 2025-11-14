@@ -8,6 +8,7 @@
   --color-border-form: rgba(123, 123, 123, 0.20);
   --color-font-form: rgba(123, 123, 123, 0.50);
   --color-bg-menu: rgba(255, 255, 255, 0.95);
+  --color-border-card: rgba(123, 123, 123, 0.20);
 }
 
 @layer base {

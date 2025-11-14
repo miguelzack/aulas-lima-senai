@@ -11,24 +11,24 @@ import { SendEmailIco } from "@/assets/svgs/export"
 export default function Home() {
   return (
     <div className="all-page">
-      <main id="home" className="flex flex-col justify-center lg:py-[52px] py-[60px] lg:px-[58px] px-9 bg-[url('/bg-main.jpg')] bg-cover bg-no-repeat bg-[lightgray] bg-center items-center lg:gap-[62px] gap-[57px] self-stretch">
+      <main id="home" className="flex flex-col justify-center lg:py-[52px] sm:py-[60px] py-8 lg:px-[58px] px-9 bg-[url('/bg-main.jpg')] bg-cover bg-no-repeat bg-[lightgray] bg-center items-center lg:gap-[62px] sm:gap-[57px] gap-11 self-stretch">
         <Header />
         <section className="hero lg:w-[878px] flex flex-col items-center">
           <Image
             src={Perfil}
             alt="Minha foto de perfil"
-            className="md:w-[424px] w-[280px] md:mb-0 mb-[57px]"
+            className="md:w-[424px] sm:w-[280px] w-[200px] md:mb-0 sm:mb-[57px] mb-11"
           />
-          <div className="flex flex-col items-center self-stretch md:gap-0 gap-[15px] w-full">
-            <div className="flex items-center gap-[21px]">
+          <div className="flex flex-col items-center self-stretch md:gap-0 sm:gap-[15px] gap-5 w-full">
+            <div className="flex sm:flex-row flex-col items-center gap-[21px]">
               <Badge label="Web Developer" />
               <Badge label="UI/UX Designer" />
             </div>
-            <h1 className="md:text-[90px] text-[65px] font-extrabold">
+            <h1 className="md:text-[90px] sm:text-[65px] text-2xl font-extrabold">
               <span className="text-primary">Miguel</span> Silva.
             </h1>
-            <div className="flex flex-col items-center self-stretch gap-[30px]">
-              <p className="text-xl font-normal text-utility-gray text-center w-full">
+            <div className="flex flex-col items-center self-stretch sm:gap-[30px] gap-5">
+              <p className="sm:text-xl text-base font-normal text-utility-gray text-center w-full">
                 With a solid foundation in my Technical Informatics studies and
                 practical front-end experience, I am always seeking opportunities
                 to apply my skills in programming and development. Bringing an
@@ -38,7 +38,7 @@ export default function Home() {
                 seek a collaboration, or explore new possibilities, I am available
                 to talk.
               </p>
-              <div className="md:mt-0 mt-[15px]">
+              <div className="md:mt-0 sm:mt-[15px]">
                 <ButtonDownload />
               </div>
             </div>
@@ -74,7 +74,7 @@ export default function Home() {
               alt="Minha foto de perfil"
               className="w-[183px]"
             />
-            <h5 className="text-white text-[40px] font-extrabold">Contact me</h5>
+            <h5 className="text-white text-[40px] font-extrabold text-center">Contact me</h5>
             <p className="self-stretch text-xl font-normal text-white md:text-start text-center">Interested in discussing web development, sharing ideas about software projects, or exploring new solutions in programming? Feel free to reach out—let's connect and keep building.</p>
             <ButtonLinkedin />
           </div>
@@ -85,13 +85,13 @@ export default function Home() {
               <input placeholder="Email ID*" type="email" id="email" className="flex w-full px-[25px] py-2.5 rounded-lg border border-border-form text-base text-font-form font-normal" />
               <input placeholder="Phone No*" type="number" id="number" className="flex w-full px-[25px] py-2.5 rounded-lg border border-border-form text-base text-font-form font-normal" />
               <textarea name="message" id="message" placeholder="Message*" className="w-full h-[105px] py-2.5 px-[25px] items-start gap-2.5 rounded-lg border border-border-form text-base text-font-form font-normal"></textarea>
-              <button className="login flex py-[15px] px-[25px] justify-center items-center gap-2.5 rounded-[35px] border border-white bg-primary text-xl font-normal text-white" type="submit"> <SendEmailIco /> Send email</button>
+              <button className="login flex py-[15px] px-[25px] justify-center items-center gap-2.5 rounded-[35px] border border-white bg-primary text-xl w-full font-normal text-white" type="submit"> <SendEmailIco /> Send email</button>
             </form>
           </div>
         </div>
       </section>
       <footer className="flex py-[50px] justify-center items-center gap-2.5 self-stretch bg-black">
-        <p className="text-gray-custom text-base font-normal">Copyright 2025 @CIT || All Rights Reserved</p>
+        <p className="text-gray-custom text-base font-normal text-center">Copyright 2025 @CIT || All Rights Reserved</p>
       </footer>
     </div>
   );
