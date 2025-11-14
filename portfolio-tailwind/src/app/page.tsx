@@ -11,9 +11,9 @@ import { SendEmailIco } from "@/assets/svgs/export"
 export default function Home() {
   return (
     <div className="all-page">
-      <main className="flex flex-col justify-center py-[52px] px-[58px] bg-[url('/bg-main.jpg')] bg-cover bg-no-repeat bg-[lightgray] bg-center items-center gap-[62px] self-stretch">
+      <main id="home" className="flex flex-col justify-center py-[52px] px-[58px] bg-[url('/bg-main.jpg')] bg-cover bg-no-repeat bg-[lightgray] bg-center items-center gap-[62px] self-stretch">
         <Header />
-        <section id="home" className="hero w-[878px] flex flex-col items-center">
+        <section  className="hero w-[878px] flex flex-col items-center">
           <Image
             src={Perfil}
             alt="Minha foto de perfil"
@@ -64,7 +64,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="contact flex flex-col items-start gap-2.5 self-stretch bg-primary">
+      <section id="contact" className="flex flex-col items-start gap-2.5 self-stretch bg-primary">
         <div className="flex py-[100px] justify-center items-center gap-[141px] self-stretch">
           <div className="flex w-[45.572%] flex-col items-start gap-5">
             <Image
