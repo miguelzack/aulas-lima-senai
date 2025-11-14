@@ -171,7 +171,7 @@ export default function Home() {
               imageSrc={ProjectPokemon}
               altText="Capa do projeto Pokémon Search Form"
               title="Pokémon Search Form"
-              description="Pokedex consuming PokéApi"
+              description="Pokedex consuming PokéApi."
               projectLink="https://github.com/miguelzackk/pokemon-search-form"
             />
 
@@ -179,7 +179,7 @@ export default function Home() {
               imageSrc={ProjectLandwind}
               altText="Capa do projeto Landwind"
               title="Landwind"
-              description="Landing Page with Tailwind"
+              description="Landing Page with Tailwind."
               projectLink="https://github.com/miguelzackk/meteora-bootstrap"
             />
           </div>
@@ -188,14 +188,14 @@ export default function Home() {
               imageSrc={ProjectGlassUI}
               altText="Capa do projeto GlassUI"
               title="Glass UI"
-              description="Landing Page with Tailwind"
+              description="Landing Page with Tailwind."
               projectLink="https://github.com/miguelzackk/course-funnel-test"
             />
             <ProjectCard
               imageSrc={ProjectLogin}
               altText="Capa do projeto Login"
               title="Login"
-              description="Login Page with Tailwind"
+              description="Login Page with Tailwind."
               projectLink="https://github.com/miguelzackk/login-with-tailwind"
             />
           </div>
@@ -203,8 +203,8 @@ export default function Home() {
             <ProjectCard
               imageSrc={ProjectCourseFournel}
               altText="Capa do projeto Course Fournel"
-              title="Course Funnel Test "
-              description="Landing Page with Tailwind"
+              title="Course Funnel Test"
+              description="Landing Page with Tailwind."
               projectLink="https://github.com/miguelzackk/course-funnel-test"
             />
             <ProjectCard
