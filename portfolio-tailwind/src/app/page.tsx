@@ -3,7 +3,7 @@
 import "@/styles/global.css";
 import { Header } from "@/components/header/header";
 import { Badge } from "@/components/check-prof/check";
-import { Perfil, ProjectBusPoint, ProjectSenaiExchage } from "@/assets/images/export";
+import { Perfil, ProjectBusPoint, ProjectCourseFournel, ProjectGlassUI, ProjectLandwind, ProjectLogin, ProjectMeteora, ProjectPokemon, ProjectSenaiExchage } from "@/assets/images/export";
 import Image from "next/image";
 import ButtonDownload from "@/components/button-download/button-download";
 import { ProjectCard } from "@/components/project-card/project-card";
@@ -82,15 +82,64 @@ export default function Home() {
               imageSrc={ProjectSenaiExchage}
               altText="Capa do projeto Senai Exchange"
               title="SENAI Exchange"
-              description="Senai Exchange Senai Exchange was a student project for my course, developed as a web application for SENAI students. Its main objective is to connect students, promote collaborative learning, and strengthen their personal and professional development. The platform allows students to exchange knowledge, share content, ask questions, and share experiences."
+              description="Senai Exchange was a student project for my course, developed as a web application for SENAI students. Its main objective is to connect students, promote collaborative learning, and strengthen their personal and professional development. The platform allows students to exchange knowledge, share content, ask questions, and share experiences."
               projectLink="https://github.com/senai-exchange/frontend-senai-exchange"
             />
             <ProjectCard
               imageSrc={ProjectBusPoint}
               altText="Capa do projeto BusPoint"
               title="BusPoint"
-              description="BusPoint BusPoint is an application designed to facilitate the public transportation experience, ensuring users never miss their stop by providing precise alerts. Our goal is to ensure a smooth and worry-free trip by offering a practical, intuitive, and reliable solution for daily commutes. This is a project I am currently developing together with my classmates."
+              description="BusPoint is an application designed to facilitate the public transportation experience, ensuring users never miss their stop by providing precise alerts. Our goal is to ensure a smooth and worry-free trip by offering a practical, intuitive, and reliable solution for daily commutes. This is a project I am currently developing together with my classmates."
               projectLink="https://buspoint-landpage.vercel.app/"
+            />
+          </div>
+          <div className="flex lg:flex-row flex-col items-center gap-[30px] self-stretch w-full">
+            <ProjectCard
+              imageSrc={ProjectPokemon}
+              altText="Capa do projeto Pokémon Search Form"
+              title="Pokémon Search Form"
+              description="Pokedex consuming PokéApi"
+              projectLink="https://github.com/miguelzackk/pokemon-search-form"
+            />
+
+            <ProjectCard
+              imageSrc={ProjectLandwind}
+              altText="Capa do projeto Landwind"
+              title="Landwind"
+              description="Landing Page with Tailwind"
+              projectLink="https://github.com/miguelzackk/meteora-bootstrap"
+            />
+          </div>
+          <div className="flex lg:flex-row flex-col items-center gap-[30px] self-stretch w-full">
+            <ProjectCard
+              imageSrc={ProjectGlassUI}
+              altText="Capa do projeto GlassUI"
+              title="Glass UI"
+              description="Landing Page with Tailwind"
+              projectLink="https://github.com/miguelzackk/course-funnel-test"
+            />
+            <ProjectCard
+              imageSrc={ProjectLogin}
+              altText="Capa do projeto Login"
+              title="Login"
+              description="Login Page with Tailwind"
+              projectLink="https://github.com/miguelzackk/login-with-tailwind"
+            />
+          </div>
+          <div className="flex lg:flex-row flex-col items-center gap-[30px] self-stretch w-full">
+            <ProjectCard
+              imageSrc={ProjectCourseFournel}
+              altText="Capa do projeto Course Fournel"
+              title="Course Funnel Test "
+              description="Landing Page with Tailwind"
+              projectLink="https://github.com/miguelzackk/course-funnel-test"
+            />
+            <ProjectCard
+              imageSrc={ProjectMeteora}
+              altText="Capa do projeto Meteora"
+              title="Meteora"
+              description="E-commerce with Bootstrap."
+              projectLink="https://github.com/miguelzackk/meteora-bootstrap"
             />
           </div>
         </div>
