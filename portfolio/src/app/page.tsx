@@ -291,7 +291,7 @@ export default function Home() {
       </section>
       <footer className="flex py-[50px] justify-center items-center gap-2.5 self-stretch bg-black">
         <p className="text-gray-custom text-base font-normal text-center">
-          Copyright 2025 @CIT || All Rights Reserved
+          Copyright 2025 || All Rights Reserved
         </p>
       </footer>
     </div>

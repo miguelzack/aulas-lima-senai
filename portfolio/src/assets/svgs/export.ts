@@ -19,3 +19,4 @@ export { default as NodeIco } from "./nodeIcon";
 export { default as ReactIco } from "./reactIcon";
 export { default as SassIco } from "./sassIcon";
 export { default as TailwindIco } from "./tailwindIcon";
+export { default as GiHubIco } from "./githubIco";
